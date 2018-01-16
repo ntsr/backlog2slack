@@ -1,0 +1,16 @@
+{
+  "name": "backlog2slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm install && sls deploy",
+    "remove": "sls remove"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slack-node": "^0.1.8"
+  }
+}

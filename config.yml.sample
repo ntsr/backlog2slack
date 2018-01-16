@@ -1,0 +1,7 @@
+credentials:
+    profile: YOUR_AWS_DEFAULT_PROFILE_NAME
+
+env:
+    WEBHOOKURI: "SLACK_INCOMMING_WEBHOOK_URI"
+    BASEURL: "https://YOUR_BACKLOG_PROJECTNAME.backlog.com/"
+    BOTNAME: "backlog"
