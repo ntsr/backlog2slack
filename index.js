@@ -178,14 +178,14 @@ exports.handler = function (event, context, callback) {
 
     // Slack投稿
     if(slackObj){
-      postSlack(room, slackObj['message'], slackObj['comment']);
+      postSlack(room, slackObj['message'], slackObj['comment'])
+      .then(function(){
+        callback(null, 'Done.');        
+      });
     }
   }else{
-    console.log('対象チャンネルが指定されていないか、データが取得できません。');
+    callback(new Error('対象チャンネルが指定されていないか、データが取得できません。'));
   }
-
-  callback(null, 'Done.');
-
 };
 
 process.on('unhandledRejection', console.dir);
