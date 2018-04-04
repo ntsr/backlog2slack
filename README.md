@@ -11,7 +11,7 @@ thx. https://qiita.com/kosuge/items/051922673cf57203f8db
 2. Run following script.
 
 ```
-$ npm run remove
+$ npm run deploy
 ```
 
 ## remove
