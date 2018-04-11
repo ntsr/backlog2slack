@@ -5,7 +5,8 @@ custom: ${file(config.yml)}
 provider:
   name: aws
   runtime: nodejs6.10
-  profile: ${self:custom.credentials.profile}
+  profile: ${self:custom.aws.profile}
+  region: ${self:custom.aws.region}
   stage: dev
 
   environment:

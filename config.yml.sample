@@ -1,4 +1,5 @@
-credentials:
+aws:
+    region: YOUR_AWS_REGION
     profile: YOUR_AWS_DEFAULT_PROFILE_NAME
 
 env:
